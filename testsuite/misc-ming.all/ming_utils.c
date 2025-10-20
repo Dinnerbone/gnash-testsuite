@@ -317,10 +317,12 @@ get_dejagnu_actions()
 
 		"_root.totals = function(exp, info) {\n"
 		" _root.runtest.totals(exp, info);\n"
+		" fscommand('quit');\n"
 		"};\n"
 
 		"_root.xtotals = function(exp, info) {\n"
 		" _root.runtest.totals(exp, info);\n"
+		" fscommand('quit');\n"
 		"};\n"
 
 		"_root.dejagnu_module_initialized = 1;\n";
