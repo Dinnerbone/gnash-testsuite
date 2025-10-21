@@ -26,8 +26,8 @@ do_this = function() {
 	var now = getTimer();
 	var int = now-this_timer;
 	this_timer = now;
-	check(int >= this_ms, this_ms+" interval (this) called after " + int + " milliseconds [" + __FILE__ + ":" + __LINE__ + "]");
-	note("Doing this "+this_counter+" after " + int + " milliseconds");
+	check(int >= this_ms, this_ms+" interval (this) called after some milliseconds [" + __FILE__ + ":" + __LINE__ + "]");
+	note("Doing this "+this_counter+" after some milliseconds");
 	if ( this_counter > 3 )
 	{
 		clearInterval(this_interval);
@@ -60,7 +60,7 @@ do_that = function() {
 	var now = getTimer();
 	var int = now-that_timer;
 	that_timer = now;
-	check(int >= that_ms, that_ms+" interval (that) called after " + int + " milliseconds [" + __FILE__ + ":" + __LINE__ + "]");
+	check(int >= that_ms, that_ms+" interval (that) called after some milliseconds [" + __FILE__ + ":" + __LINE__ + "]");
 	//note("Doing that "+that_counter+" after " + int + " milliseconds");
 	if ( that_counter > 3 )
 	{
