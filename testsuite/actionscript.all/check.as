@@ -72,7 +72,7 @@
 //
 //   getUrl( MEDIA(green.swf) );
 //
-#define MEDIA(x) MEDIADIR + "/" + #x
+#define MEDIA(x) #x
 
 #define INFO " [" + __FILE__ + ":" + __LINE__ + "]" 
 
